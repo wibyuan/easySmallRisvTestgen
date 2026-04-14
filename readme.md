@@ -13,7 +13,15 @@ When building a custom RISC-V CPU from scratch, we often face strict memory cons
 
 ## 🛠️ Environment Setup
 
-This project requires the RISC-V GNU cross-compilation toolchain. To run smoothly on Windows, please follow these steps:
+### For macOS Users 🍎
+The easiest way to install the RISC-V toolchain on macOS is via [Homebrew](https://brew.sh/):
+```bash
+brew install riscv64-elf-gcc
+```
+*Note: The `build.sh` script will automatically detect the Homebrew toolchain prefix.*
+
+### For Windows Users 🪟
+
 
 1. **Download the Toolchain**:
 
