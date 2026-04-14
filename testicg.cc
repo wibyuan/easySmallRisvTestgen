@@ -72,7 +72,7 @@ public:
     ICG_PRNG(int64_t seed) {
         p = 2147483647LL; 
         a = 9102LL;       
-        c = 2110582212LL; 
+        c = 2110599482LL; // hellekalek1995
         
         state = seed % p;
         if (state < 0) {
@@ -126,9 +126,9 @@ int main() {
     puts("Seed            : 114514\n");
     puts("Iterations      : "); put_u64(iterations); puts("\n");
     puts("Final    Result : "); put_u64(random_val); puts("\n");
-    puts("Expected Result : 5022853189604196808\n");
+    puts("Expected Result : 633045022880358761\n");
     
-    if(random_val == 5022853189604196808ULL) {
+    if(random_val == 633045022880358761ULL) {
         puts("---  Test Passed  ---\n");
     } else {
         puts("---     Wrong     ---\n");
