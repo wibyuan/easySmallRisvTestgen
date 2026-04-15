@@ -7,10 +7,10 @@ setlocal
 set TARGET=%~1
 set SRC=%~1.cc
 
-:: 如果没有传入参数，则使用默认的 testicg 和 test.cc
+:: 如果没有传入参数，则使用默认的 testicg 和 testicg.cc
 if "%TARGET%"=="" (
     set TARGET=testicg
-    set SRC=test.cc
+    set SRC=testicg.cc
 )
 
 echo =========================================
